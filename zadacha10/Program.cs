@@ -5,5 +5,4 @@
 
 Random rand = new Random();
 int randN = rand.Next(100, 1000);
-Console.WriteLine($"вторая цыфра числа {randN} = {randN/10 % 10}");
-
+Console.WriteLine($"вторая цифра числа {randN} = {randN / 10 % 10}");
