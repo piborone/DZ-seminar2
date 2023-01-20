@@ -4,7 +4,7 @@ int numbersA = Convert.ToInt32(Console.ReadLine());
 if (numbersA > 99)
 {
     while (numbersA >= 1000) numbersA /= 10;
-    Console.Write(numbersA % 10);
+    Console.Write("третья цыфра заданного числа: " + numbersA % 10);
 }
 else
 {
