@@ -19,5 +19,5 @@ if (numbers < 8 && numbers > 0)
 }
 else
 {
-    Console.WriteLine("Дакого дня не существует");
+    Console.WriteLine("Такого дня не существует");
 }
