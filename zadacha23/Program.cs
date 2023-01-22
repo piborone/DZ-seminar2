@@ -4,11 +4,12 @@ int numbersA = Convert.ToInt32(Console.ReadLine());
 int numbersB = 1;
 if(numbersA > 1)
 {
+    Console.Write($"Таблица кубов числел от 1 до {numbersA} -");
     while (numbersB != numbersA)
-
+    
         if (numbersB % 1 == 0)
         {
-            Console.WriteLine(numbersB*numbersB*numbersB);
+        Console.Write(" " + Math.Pow(numbersB,3));
         numbersB += 1;
         }
 }
