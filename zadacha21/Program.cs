@@ -13,8 +13,22 @@ Console.Write("введите Y2 ");
 int numbersY2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("введите Z2 ");
 int numbersZ2 = Convert.ToInt32(Console.ReadLine());
+if(numbersX1 != 0 || numbersY1 != 0 || numbersZ1 != 0 || numbersX2 != 0 && numbersY2 != 0 || numbersZ2 != 0)
+{
 Console.WriteLine($"Координаты точки А ({numbersX1}, {numbersY1}, {numbersZ1});");
 Console.WriteLine($"Координаты точки В ({numbersX2}, {numbersY2}, {numbersZ2});");
 double rezult = Math.Sqrt((Math.Pow(numbersX2-numbersX1,2))+(Math.Pow(numbersY2-numbersY1,2))+(Math.Pow(numbersZ2-numbersZ1,2)));
 double coord = Math.Round(rezult, 2, MidpointRounding.AwayFromZero);
-Console.WriteLine($"Расстояние между точками в 3D пространстве - {coord}");
+    if(coord > 0)
+    {
+    Console.WriteLine($"Расстояние между точками в 3D пространстве - {coord}");
+    }
+    else
+    {
+    Console.WriteLine($"ОШИБКА!!! Расстояние между точками в 3D пространстве не может быть отрицательным");
+    }
+}
+else
+{
+Console.WriteLine("Заданная точка надодится в перечечении осей координат и имеет нулевое значение");
+}
