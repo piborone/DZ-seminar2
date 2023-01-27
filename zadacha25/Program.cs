@@ -31,11 +31,7 @@ int InputNumbers(string str)
     return numbers;
 }
 
-//Console.WriteLine("введите число А: ");
 int A = InputNumbers("Введите число A: ");
-//Convert.ToInt32(Console.ReadLine());
-//Console.WriteLine("введите число B: ");
 int B = InputNumbers("Введите число В: ");
-//Convert.ToInt32(Console.ReadLine());
 int steA = Ste(A, B);
 Console.WriteLine($"{A} в степени {B} = {steA}");
