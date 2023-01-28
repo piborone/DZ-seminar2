@@ -50,6 +50,7 @@ int numbers = Convert.ToInt32(Console.ReadLine());
 int numbersA = Proverka(numbers);
 
 
+
     
 // Console.WriteLine("Программа создаст массив длинной от 1 до 8 элементов");
 // Console.WriteLine("Введите длинну массива меньше или равную 8 элементам");
