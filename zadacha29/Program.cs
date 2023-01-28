@@ -20,16 +20,15 @@
 // }
 // при числе больше 8 выводит ошибку, но все равно делает массив 
 
-int Proverka(int numbersA)
+int[] Proverka(int numbersA)
 {
             int[] array = new int[numbersA]; 
             for(int i = 0; i < numbersA; i++)
             {
             array[i] = new Random().Next(10);    
             }
-            Console.WriteLine($"[{String.Join(", ", array)}]");
-                      
-    return numbersA;
+                                             
+    return array;
 }
 
 Console.WriteLine("Программа создаст массив длинной от 1 до 8 элементов");
@@ -37,8 +36,8 @@ Console.WriteLine("Введите длинну массива меньше ил�
 int numbers = Convert.ToInt32(Console.ReadLine());
 if(numbers > 0 && numbers <= 8)
     {
-    int array = Proverka(numbers); 
-      
+    int[] array = Proverka(numbers); 
+    Console.WriteLine($"[{String.Join(", ", array)}]");  
     }  
     else
     {    
