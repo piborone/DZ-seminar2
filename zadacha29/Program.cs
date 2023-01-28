@@ -3,22 +3,6 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 
 // 6, 1, 33 -> [6, 1, 33]
-// int Proverka(int numbersA)
-// {
-  
-//     if(numbersA > 0 && numbersA <= 8)
-//     {
-           
-//     }
-//     else
-//     {
-//     System.Console.WriteLine("Ошибка!!!");
-//     System.Console.WriteLine("Введенное число не неходится в диапозоне от 1 до 8");
-//     }
-            
-//     return numbersA;      
-// }
-// при числе больше 8 выводит ошибку, но все равно делает массив 
 
 int[] Proverka(int numbersA)
 {
