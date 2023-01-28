@@ -7,7 +7,7 @@ int Sum(int numbers)
 {
 
 string? text = Convert.ToString(numbers);
-int numbersA = Convert.ToInt32(Convert.ToString(text!.Length));
+int numbersA = text!.Length;
 int sum = 0;
     for(int i = 0; i < numbersA; i++)
     {
@@ -16,22 +16,10 @@ int sum = 0;
     return sum;
 }
 
-// Console.Write("введите число: ");
-// string? text = Console.ReadLine();
-// int numbers = Convert.ToInt32(Convert.ToString(text!.Length));
-// int sum = 0;
-// for(int i = 0; i < numbers; i++)
-// {
-//    sum = sum + Convert.ToInt32(Convert.ToString(text[i]));
-// }
-// Console.WriteLine(sum);
-
-
-
 int InputNumbers(string str)
 {
     int numbers;
-    string text;
+    string? text;
     while(true)
     {
         Console.WriteLine(str);
